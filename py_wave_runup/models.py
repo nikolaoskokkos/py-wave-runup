@@ -51,9 +51,9 @@ class RunupModel(metaclass=ABCMeta):
 
         # Ensure input is atleast 1d numpy array, this is so we can handle lists,
         # arrays and floats.
-        self.Hs = np.atleast_1d(Hs).astype(float)
-        self.beta = np.atleast_1d(beta).astype(float)
-        self.r = np.atleast_1d(r).astype(float)
+        self.Hs = np.atleast_1d(Hs).astype('float')
+        self.beta = np.atleast_1d(beta).astype('float')
+        self.r = np.atleast_1d(r).astype('float')
 
         # Calculate wave length if it hasn't been specified.
         if not Lp:
